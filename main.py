@@ -48,8 +48,8 @@ def read_blacklist_from_txt(file_path):
     BlackList = [line.split(',')[1].strip() for line in lines if ',' in line]
     return BlackList
 
-blacklist_auto=read_blacklist_from_txt('blacklist/blacklist_auto.txt') 
-blacklist_manual=read_blacklist_from_txt('blacklist/blacklist_manual.txt') 
+blacklist_auto=read_blacklist_from_txt('blacklist_auto.txt') 
+blacklist_manual=read_blacklist_from_txt('blacklist_manual.txt') 
 combined_blacklist = list(set(blacklist_auto + blacklist_manual))
 
 # 定义多个对象用于存储不同内容的行文本
@@ -336,59 +336,59 @@ def read_txt_to_array(file_name):
         print(f"An error occurred: {e}")
         return []
 #读取文本
-ys_dictionary=read_txt_to_array('主频道/CCTV.txt') #仅排序用
-dj_dictionary=read_txt_to_array('主频道/DJ舞曲.txt') #过滤+排序
-mtv_dictionary=read_txt_to_array('主频道/MTV.txt') #过滤+排序
-cw_dictionary=read_txt_to_array('主频道/春晚.txt') #过滤+排序
-dsj_dictionary=read_txt_to_array('主频道/电视剧.txt') #过滤
-dy_dictionary=read_txt_to_array('主频道/电影.txt') #过滤
-gagj_dictionary=read_txt_to_array('主频道/港澳国际.txt') #过滤
-hgnt_dictionary=read_txt_to_array('主频道/韩国女团.txt') #过滤
-jlp_dictionary=read_txt_to_array('主频道/纪录片.txt') #过滤
-js_dictionary=read_txt_to_array('主频道/解说频道.txt') #过滤
-mx_dictionary=read_txt_to_array('主频道/明星.txt') #过滤
-sr_dictionary=read_txt_to_array('主频道/少儿频道.txt') #过滤
-sjzb_dictionary=read_txt_to_array('主频道/实景直播.txt') #过滤
-radio_dictionary=read_txt_to_array('主频道/收音机频道.txt') #过滤
-ty_dictionary=read_txt_to_array('主频道/体育频道.txt') #过滤
-ws_dictionary=read_txt_to_array('主频道/卫视频道.txt') #过滤
-xq_dictionary=read_txt_to_array('主频道/戏曲频道.txt') #过滤
-yslb_dictionary=read_txt_to_array('主频道/影视轮播.txt') #过滤
-game_dictionary=read_txt_to_array('主频道/游戏频道.txt') #过滤
-ztp_dictionary=read_txt_to_array('主频道/主题片.txt') #过滤
-zy_dictionary=read_txt_to_array('主频道/综艺频道.txt') #过滤
+ys_dictionary=read_txt_to_array('CCTV.txt') #仅排序用
+dj_dictionary=read_txt_to_array('DJ舞曲.txt') #过滤+排序
+mtv_dictionary=read_txt_to_array('MTV.txt') #过滤+排序
+cw_dictionary=read_txt_to_array('春晚.txt') #过滤+排序
+dsj_dictionary=read_txt_to_array('电视剧.txt') #过滤
+dy_dictionary=read_txt_to_array('电影.txt') #过滤
+gagj_dictionary=read_txt_to_array('港澳国际.txt') #过滤
+hgnt_dictionary=read_txt_to_array('韩国女团.txt') #过滤
+jlp_dictionary=read_txt_to_array('纪录片.txt') #过滤
+js_dictionary=read_txt_to_array('解说频道.txt') #过滤
+mx_dictionary=read_txt_to_array('明星.txt') #过滤
+sr_dictionary=read_txt_to_array('少儿频道.txt') #过滤
+sjzb_dictionary=read_txt_to_array('实景直播.txt') #过滤
+radio_dictionary=read_txt_to_array('收音机频道.txt') #过滤
+ty_dictionary=read_txt_to_array('体育频道.txt') #过滤
+ws_dictionary=read_txt_to_array('卫视频道.txt') #过滤
+xq_dictionary=read_txt_to_array('戏曲频道.txt') #过滤
+yslb_dictionary=read_txt_to_array('影视轮播.txt') #过滤
+game_dictionary=read_txt_to_array('游戏频道.txt') #过滤
+ztp_dictionary=read_txt_to_array('主题片.txt') #过滤
+zy_dictionary=read_txt_to_array('综艺频道.txt') #过滤
 
 
-ah_dictionary=read_txt_to_array('地方台/安徽频道.txt') #过滤
-bj_dictionary=read_txt_to_array('地方台/北京频道.txt') #过滤
-cq_dictionary=read_txt_to_array('地方台/重庆频道.txt') #过滤
-fj_dictionary=read_txt_to_array('地方台/福建频道.txt') #过滤
-gs_dictionary=read_txt_to_array('地方台/甘肃频道.txt') #过滤
-gd_dictionary=read_txt_to_array('地方台/广东频道.txt') #过滤
-gx_dictionary=read_txt_to_array('地方台/广西频道.txt') #过滤
-gz_dictionary=read_txt_to_array('地方台/贵州频道.txt') #过滤
-hainan_dictionary=read_txt_to_array('地方台/海南频道.txt') #过滤
-heb_dictionary=read_txt_to_array('地方台/河北频道.txt') #过滤
-hen_dictionary=read_txt_to_array('地方台/河南频道.txt') #过滤
-hlj_dictionary=read_txt_to_array('地方台/黑龙江频道.txt') #过滤
-hub_dictionary=read_txt_to_array('地方台/湖北频道.txt') #过滤
-hun_dictionary=read_txt_to_array('地方台/湖南频道.txt') #过滤
-jl_dictionary=read_txt_to_array('地方台/吉林频道.txt') #过滤
-js_dictionary=read_txt_to_array('地方台/江苏频道.txt') #过滤
-jx_dictionary=read_txt_to_array('地方台/江西频道.txt') #过滤
-ln_dictionary=read_txt_to_array('地方台/辽宁频道.txt') #过滤
-nm_dictionary=read_txt_to_array('地方台/内蒙频道.txt') #过滤
-nx_dictionary=read_txt_to_array('地方台/宁夏频道.txt') #过滤
-qh_dictionary=read_txt_to_array('地方台/青海频道.txt') #过滤
-sd_dictionary=read_txt_to_array('地方台/山东频道.txt') #过滤
-sx_dictionary=read_txt_to_array('地方台/山西频道.txt') #过滤
-shanxi_dictionary=read_txt_to_array('地方台/陕西频道.txt') #过滤
-sh_dictionary=read_txt_to_array('地方台/上海频道.txt') #过滤
-sc_dictionary=read_txt_to_array('地方台/四川频道.txt') #过滤
-tj_dictionary=read_txt_to_array('地方台/天津频道.txt') #过滤
-xj_dictionary=read_txt_to_array('地方台/新疆频道.txt') #过滤
-yn_dictionary=read_txt_to_array('地方台/云南频道.txt') #过滤
-zj_dictionary=read_txt_to_array('地方台/浙江频道.txt') #过滤
+ah_dictionary=read_txt_to_array('安徽频道.txt') #过滤
+bj_dictionary=read_txt_to_array('北京频道.txt') #过滤
+cq_dictionary=read_txt_to_array('重庆频道.txt') #过滤
+fj_dictionary=read_txt_to_array('福建频道.txt') #过滤
+gs_dictionary=read_txt_to_array('甘肃频道.txt') #过滤
+gd_dictionary=read_txt_to_array('广东频道.txt') #过滤
+gx_dictionary=read_txt_to_array('广西频道.txt') #过滤
+gz_dictionary=read_txt_to_array('贵州频道.txt') #过滤
+hainan_dictionary=read_txt_to_array('海南频道.txt') #过滤
+heb_dictionary=read_txt_to_array('河北频道.txt') #过滤
+hen_dictionary=read_txt_to_array('河南频道.txt') #过滤
+hlj_dictionary=read_txt_to_array('黑龙江频道.txt') #过滤
+hub_dictionary=read_txt_to_array('湖北频道.txt') #过滤
+hun_dictionary=read_txt_to_array('湖南频道.txt') #过滤
+jl_dictionary=read_txt_to_array('吉林频道.txt') #过滤
+js_dictionary=read_txt_to_array('江苏频道.txt') #过滤
+jx_dictionary=read_txt_to_array('江西频道.txt') #过滤
+ln_dictionary=read_txt_to_array('辽宁频道.txt') #过滤
+nm_dictionary=read_txt_to_array('内蒙频道.txt') #过滤
+nx_dictionary=read_txt_to_array('宁夏频道.txt') #过滤
+qh_dictionary=read_txt_to_array('青海频道.txt') #过滤
+sd_dictionary=read_txt_to_array('山东频道.txt') #过滤
+sx_dictionary=read_txt_to_array('山西频道.txt') #过滤
+shanxi_dictionary=read_txt_to_array('陕西频道.txt') #过滤
+sh_dictionary=read_txt_to_array('上海频道.txt') #过滤
+sc_dictionary=read_txt_to_array('四川频道.txt') #过滤
+tj_dictionary=read_txt_to_array('天津频道.txt') #过滤
+xj_dictionary=read_txt_to_array('新疆频道.txt') #过滤
+yn_dictionary=read_txt_to_array('云南频道.txt') #过滤
+zj_dictionary=read_txt_to_array('浙江频道.txt') #过滤
 
 #读取纠错频道名称方法
 def load_corrections_name(filename):
@@ -457,7 +457,7 @@ def custom_sort(s):
 
 
 #读取whitelist,把高响应源从白名单中抽出加入merged_output。
-whitelist_auto_lines=read_txt_to_array('blacklist/whitelist_auto.txt') #
+whitelist_auto_lines=read_txt_to_array('whitelist_auto.txt') #
 for whitelist_line in whitelist_auto_lines:
     if  "#genre#" not in whitelist_line and "," in whitelist_line and "://" in whitelist_line:
         whitelist_parts = whitelist_line.split(",")
